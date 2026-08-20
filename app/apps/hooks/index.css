@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Karla:wght@400;500;600;700&display=swap");
+
+@import "tailwindcss";
+
+body {
+  font-family: "Karla", sans-serif;
+  overflow-x: clip;
+}
+
+@layer base {
+  :root {
+    --background: 40 30% 97%;
+    --foreground: 213 40% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 213 40% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 213 40% 12%;
+    --primary: 213 45% 15%;
+    --primary-foreground: 40 40% 97%;
+    --secondary: 38 34% 92%;
+    --secondary-foreground: 213 45% 15%;
+    --muted: 38 25% 92%;
+    --muted-foreground: 213 12% 40%;
+    --accent: 33 62% 45%;
+    --accent-foreground: 40 40% 97%;
+    --destructive: 0 70% 42%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 38 20% 85%;
+    --input: 38 20% 85%;
+    --ring: 33 62% 45%;
+    --radius: 0.25rem;
+  }
+  .dark {
+    --background: 213 40% 8%;
+    --foreground: 40 30% 95%;
+    --card: 213 38% 12%;
+    --card-foreground: 40 30% 95%;
+    --popover: 213 38% 12%;
+    --popover-foreground: 40 30% 95%;
+    --primary: 40 30% 95%;
+    --primary-foreground: 213 45% 12%;
+    --secondary: 213 30% 18%;
+    --secondary-foreground: 40 30% 95%;
+    --muted: 213 30% 18%;
+    --muted-foreground: 40 12% 70%;
+    --accent: 33 62% 52%;
+    --accent-foreground: 213 45% 10%;
+    --destructive: 0 62% 40%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 213 25% 22%;
+    --input: 213 25% 22%;
+    --ring: 33 62% 52%;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: "Fraunces", Georgia, serif;
+  }
+  .rule-accent {
+    background-image: linear-gradient(
+      90deg,
+      hsl(var(--accent)) 0 3rem,
+      hsl(var(--border)) 3rem 100%
+    );
+    height: 2px;
+  }
+}
